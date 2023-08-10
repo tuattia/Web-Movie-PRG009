@@ -6,6 +6,7 @@ img {
     filter: drop-shadow(20px 0 5px rgba(255, 255, 255, 0.6));
 }
 h1 {
+    font-family: "Moul", cursive;
     text-transform: uppercase;
     color: #1201d3;
     filter: drop-shadow(6px 5px 2px rgba(255, 255, 255, 0.3));
@@ -13,4 +14,18 @@ h1 {
 }
 h1 .text-purple {
     color: #ac01bb;
+}
+.container a {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+.container a svg {
+    margin-top: -3px;
+}
+p.tagline {
+    color: white;
+    margin-top: 50%;
+    font-size: 1.2em;
+    font-family: serif;
 }
