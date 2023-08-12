@@ -29,3 +29,21 @@ p.tagline {
     font-size: 1.2em;
     font-family: serif;
 }
+
+/* breakpoint */
+@media (max-width: 576px) {
+    .container .section1 {
+        margin-top: 10vh;
+    }
+    .container .section1 .tagline {
+        margin-top: 40vh;
+    }
+    .container .section2 {
+        display: none;
+    }
+}
+@media (max-width: 375px) {
+    .container .section1 .tagline {
+        margin-top: 20vh;
+    }
+}

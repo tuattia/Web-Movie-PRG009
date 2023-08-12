@@ -17,7 +17,7 @@
   <body>
     <div class="container">
         <div class="row text-center">
-            <div class="col-sm-6 pt-5">
+            <div class="col-md-6 pt-5 section1">
                 <h1 style="font-family:Moul"><span class="text-purple">mov</span>ie+</h1>
                 <div class="d-grid gap-3 pt-5">
                   <a href="" class="btn btn-light">SIGN IN</a>
@@ -25,7 +25,7 @@
                 </div>
                 <p class="tagline">Watch your favourite movie or series on only one platform. You can watch it anytime and anywhere</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6 section2">
                 <img src="/img/14.jpg" alt="herry potter">
             </div>
         </div>
