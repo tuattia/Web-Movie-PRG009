@@ -19,8 +19,8 @@ Route::get('/', function () {
 });
 Route::get('/start', function () {
     return view('login.start');
-})->middleware('guest');
-Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+})->middleware('guest')->name('login');
+Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'autenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/test', function () {
