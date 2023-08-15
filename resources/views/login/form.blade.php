@@ -2,17 +2,40 @@
 
 @section('container')
 <div class="col-md-6 mt-5">
-    <form class="text-light mt-4">
+    @if (session()->has('success'))
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ session('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
+
+    @if (session()->has('loginError'))
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            {{ session('loginError') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
+    <form action="/login" method="POST" class="text-light mt-4">
+        @csrf
         <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
+            @error('email')
+                <div class="invalid-feedback">
+                    {{ $message }}
+                </div>
+            @enderror
+            <input type="email" class="form-control @error('email')
+                is-invalid
+            @enderror" id="email" aria-describedby="emailHelp" name="email" autofocus value="{{ old('email') }}">
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" name="password">
+            <input type="password" class="form-control @error('password')
+                is-invalid
+            @enderror" id="password" name="password">
         </div>
         <button type="submit" class="btn btn-primary w-100 fw-bold fs-5">LOGIN</button>
     </form>
-    <small><a href="/start"class="d-block mt-2 fs-6">Back to login!</a></small>
+    <small class="d-block mt-2"><a href="/start">Back to login!</a></small>
 </div>
 @endsection
