@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GoogleAuthController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,12 +18,18 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/start', function () {
     return view('login.start');
 })->middleware('guest')->name('login');
+
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'autenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
+
 Route::get('/test', function () {
     return view('login.test');
 })->middleware('auth');
+
+Route::get('auth/google', [GoogleAuthController::class, 'redirect'])->name('google-auth');
+Route::get('http://127.0.0.1:8000/auth/google/call-back', [GoogleAuthController::class, 'callbackGoogle']);
