@@ -21,6 +21,11 @@ class GoogleAuthController extends Controller
 
             $user = User::where('google_id', $google_user->getId())->first();
 
+            if ($user) {
+                Auth::login($user);
+                return redirect()->intended('/test');
+            }
+
             if (!$user) {
                 $new_user = User::create([
                     'name' => $google_user->getName(),
@@ -29,10 +34,6 @@ class GoogleAuthController extends Controller
                 ]);
 
                 Auth::login($new_user);
-
-                return redirect()->intended('/test');
-            } else {
-                Auth::login($user);
 
                 return redirect()->intended('/test');
             }

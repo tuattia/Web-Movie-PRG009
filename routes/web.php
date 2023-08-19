@@ -33,4 +33,4 @@ Route::get('/test', function () {
 
 Route::get('/google', [GoogleAuthController::class, 'redirect'])->name('google-auth');
 // Route::get('http://127.0.0.1:8000/google/callback', [GoogleAuthController::class, 'callbackGoogle']);
-Route::get(env('GOOGLE_CLIENT_CALLBACK'), [GoogleAuthController::class, 'callbackGoogle']);
+Route::get('/auth', [GoogleAuthController::class, 'callbackGoogle']);
