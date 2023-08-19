@@ -42,21 +42,21 @@
       <!--   Group 1 -->
       <div class="media-group" id="group-1">
         <div class="media-element">
-          <img src="pict/pinocchio.jpg" alt="poster pinocchio" />
+          <img src="pinocchio.jpg" alt="poster pinocchio" />
           <a href="#">
             <h2 margin-top=20px> Pinocchio</h2>
             <h5> Adventure, Comedy </h5>
           </a>
         </div>
         <div class="media-element">
-          <img src="pict/5.jpg" alt="poster frozen" />
+          <img src="5.jpg" alt="poster frozen" />
           <a href="#">
             <h2 margin-top=20px> Frozen</h2>
             <h5> Family, Comedy </h5>
           </a>
         </div>
         <div class="media-element">
-          <img src="pict/the batman.jpg" alt="poster the batman" />
+          <img src="the batman.jpg" alt="poster the batman" />
           <a href="#">
             <h2 margin-top=20px> The Batman</h2>
             <h5> Action, Crime </h5>
@@ -76,21 +76,21 @@
           </svg>
         </a>
         <div class="media-element">
-          <img src="pict/claus family 2.jpg" alt="poster Clause Family" />
+          <img src="claus family 2.jpg" alt="poster Clause Family" />
           <a href="#">
             <h2 margin-top=20px> Claus Family 2</h2>
             <h5> Family, Comedy </h5>
           </a>
         </div>
         <div class="media-element">
-          <img src="pict/6.jpg" alt="poster toy story" />
+          <img src="6.jpg" alt="poster toy story" />
           <a href="#">
             <h2 margin-top=20px> Toy Story</h2>
             <h5> Adventure, Comedy </h5>
           </a>
         </div>
         <div class="media-element">
-          <img src="pict/8.jpg" alt="poster beauty and the beast" />
+          <img src="8.jpg" alt="poster beauty and the beast" />
           <a href="#">
             <h2 margin-top=20px> Beauty and The Beast</h2>
             <h5> Family </h5>
@@ -106,19 +106,19 @@
       <!--   Group 11 -->
       <div class="media-group" id="group-11">
         <a class="media-element2" href="#">
-          <img src="pict/4.jpg" alt="poster" />
+          <img src="4.jpg" alt="poster" />
           <h2> Brave </h2> 
         </a>
         <a class="media-element2" href="#">
-          <img src="pict/1.jpg" alt="poster" />
+          <img src="1.jpg" alt="poster" />
           <h2> Wish Dragon </h2> 
         </a>
         <a class="media-element2" href="#">
-          <img src="pict/6.jpg" alt="poster" />
+          <img src="6.jpg" alt="poster" />
           <h2> Toy Story 3 </h2> 
         </a>
         <a class="media-element2" href="#">
-          <img src="pict/10.jpg" alt="poster" />
+          <img src="10.jpg" alt="poster" />
           <h2> Pirates of the caribbean </h2> 
         </a>
         
@@ -136,19 +136,19 @@
           </svg>
         </a>
         <a class="media-element2" href="#">
-          <img src="pict/2.jpg" alt="poster" />
+          <img src="2.jpg" alt="poster" />
           <h2> Trolls</h2>
         </a>
         <a class="media-element2" href="#">
-          <img src="pict/7.jpg" alt="poster" />
+          <img src="7.jpg" alt="poster" />
           <h2> Peter Pan</h2>
         </a>
         <a class="media-element2" href="#">
-          <img src="pict/8.jpg" alt="poster" />
+          <img src="8.jpg" alt="poster" />
           <h2> Beauty and the beast</h2>
         </a>
         <a class="media-element2" href="#">
-          <img src="pict/the batman.jpg" alt="poster" />
+          <img src="the batman.jpg" alt="poster" />
           <h2> The Batman</h2>
         </a>
         <a class="next" href="#group-13" aria-label="next">
@@ -165,19 +165,19 @@
           </svg>
         </a>
         <a class="media-element2" href="#">
-          <img src="pict/9.jpg" alt="poster" />
+          <img src="9.jpg" alt="poster" />
           <h2> Aladdin</h2>
         </a>
         <a class="media-element2" href="#">
-          <img src="pict/14.jpg" alt="poster" />
+          <img src="14.jpg" alt="poster" />
           <h2> Harry Potter </h2>
         </a>
         <a class="media-element2" href="#">
-          <img src="pict/11.jpg" alt="poster" />
+          <img src="11.jpg" alt="poster" />
           <h2> Guardians of the galaxy</h2>
         </a>
         <a class="media-element2" href="#">
-          <img src="pict/13.jpg" alt="poster" />
+          <img src="13.jpg" alt="poster" />
           <h2> Harry Potter 1</h2>
         </a>
        
