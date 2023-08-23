@@ -29,6 +29,9 @@ p.tagline {
     font-size: 1.2em;
     font-family: serif;
 }
+input {
+    text-align: center;
+}
 
 /* breakpoint */
 @media (max-width: 576px) {

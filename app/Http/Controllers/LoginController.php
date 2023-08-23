@@ -20,7 +20,7 @@ class LoginController extends Controller
         ]);
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('/test');
+            return redirect()->intended('/test')->with('success', 'Selamat Datang Di Movie+');
         }
         // kalau gagal
         return back()->with('loginError', 'Login Failed!');
