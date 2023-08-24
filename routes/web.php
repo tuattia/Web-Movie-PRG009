@@ -32,7 +32,7 @@ Route::get('/register', [RegisterController::class, 'index'])->middleware('guest
 Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/test', function () {
-    return view('login.test');
+    return view('test');
 })->middleware('auth');
 
 Route::get('/google', [GoogleAuthController::class, 'redirect'])->name('google-auth');
