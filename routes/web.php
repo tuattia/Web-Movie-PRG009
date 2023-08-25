@@ -34,6 +34,9 @@ Route::post('/register', [RegisterController::class, 'store']);
 Route::get('/test', function () {
     return view('test');
 })->middleware('auth');
+Route::get('/detail', function () {
+    return view('detail');
+})->name('detail');
 
 Route::get('/google', [GoogleAuthController::class, 'redirect'])->name('google-auth');
 // Route::get('http://127.0.0.1:8000/google/callback', [GoogleAuthController::class, 'callbackGoogle']);

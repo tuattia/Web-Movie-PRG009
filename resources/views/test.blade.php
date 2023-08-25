@@ -24,6 +24,12 @@
               <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
             </svg></a>
           </li>
+          <li class="nav-item">
+            <form action="/logout" method="POST">
+                @csrf
+                <button type="submit" class="btn btn-danger">logout</button>
+            </form>
+          </li>
         </ul>
       </div>
     </div>
@@ -42,21 +48,21 @@
       <div class="media-group" id="group-1">
         <div class="media-element">
           <img src="img/pinocchio.jpg" alt="poster pinocchio" />
-          <a href="#">
+          <a href="{{ route('detail') }}{ route('detail') }}">
             <h2 margin-top=20px> Pinocchio</h2>
             <h5> Adventure, Comedy </h5>
           </a>
         </div>
         <div class="media-element">
           <img src="img/5.jpg" alt="poster frozen" />
-          <a href="#">
+          <a href="{{ route('detail') }}">
             <h2 margin-top=20px> Frozen</h2>
             <h5> Family, Comedy </h5>
           </a>
         </div>
         <div class="media-element">
           <img src="img/the batman.jpg" alt="poster the batman" />
-          <a href="#">
+          <a href="{{ route('detail') }}">
             <h2 margin-top=20px> The Batman</h2>
             <h5> Action, Crime </h5>
           </a>
@@ -76,21 +82,21 @@
         </a>
         <div class="media-element">
           <img src="img/claus family 2.jpg" alt="poster Clause Family" />
-          <a href="#">
+          <a href="{{ route('detail') }}">
             <h2 margin-top=20px> Claus Family 2</h2>
             <h5> Family, Comedy </h5>
           </a>
         </div>
         <div class="media-element">
           <img src="img/6.jpg" alt="poster toy story" />
-          <a href="#">
+          <a href="{{ route('detail') }}">
             <h2 margin-top=20px> Toy Story</h2>
             <h5> Adventure, Comedy </h5>
           </a>
         </div>
         <div class="media-element">
           <img src="img/8.jpg" alt="poster beauty and the beast" />
-          <a href="#">
+          <a href="{{ route('detail') }}">
             <h2 margin-top=20px> Beauty and The Beast</h2>
             <h5> Family </h5>
           </a>
@@ -104,19 +110,19 @@
     <div class="media-scroller">
       <!--   Group 11 -->
       <div class="media-group" id="group-11">
-        <a class="media-element2" href="#">
+        <a class="media-element2" href="{{ route('detail') }}">
           <img src="img/4.jpg" alt="poster" />
           <h2> Brave </h2>
         </a>
-        <a class="media-element2" href="#">
+        <a class="media-element2" href="{{ route('detail') }}">
           <img src="img/1.jpg" alt="poster" />
           <h2> Wish Dragon </h2>
         </a>
-        <a class="media-element2" href="#">
+        <a class="media-element2" href="{{ route('detail') }}">
           <img src="img/6.jpg" alt="poster" />
           <h2> Toy Story 3 </h2>
         </a>
-        <a class="media-element2" href="#">
+        <a class="media-element2" href="{{ route('detail') }}">
           <img src="img/10.jpg" alt="poster" />
           <h2> Pirates of the caribbean </h2>
         </a>
@@ -134,19 +140,19 @@
             <use href="#previous"></use>
           </svg>
         </a>
-        <a class="media-element2" href="#">
+        <a class="media-element2" href="{{ route('detail') }}">
           <img src="img/2.jpg" alt="poster" />
           <h2> Trolls</h2>
         </a>
-        <a class="media-element2" href="#">
+        <a class="media-element2" href="{{ route('detail') }}">
           <img src="img/7.jpg" alt="poster" />
           <h2> Peter Pan</h2>
         </a>
-        <a class="media-element2" href="#">
+        <a class="media-element2" href="{{ route('detail') }}">
           <img src="img/8.jpg" alt="poster" />
           <h2> Beauty and the beast</h2>
         </a>
-        <a class="media-element2" href="#">
+        <a class="media-element2" href="{{ route('detail') }}">
           <img src="img/the batman.jpg" alt="poster" />
           <h2> The Batman</h2>
         </a>
@@ -163,19 +169,19 @@
             <use href="#previous"></use>
           </svg>
         </a>
-        <a class="media-element2" href="#">
+        <a class="media-element2" href="{{ route('detail') }}">
           <img src="img/9.jpg" alt="poster" />
           <h2> Aladdin</h2>
         </a>
-        <a class="media-element2" href="#">
+        <a class="media-element2" href="{{ route('detail') }}">
           <img src="img/14.jpg" alt="poster" />
           <h2> Harry Potter </h2>
         </a>
-        <a class="media-element2" href="#">
+        <a class="media-element2" href="{{ route('detail') }}">
           <img src="img/11.jpg" alt="poster" />
           <h2> Guardians of the galaxy</h2>
         </a>
-        <a class="media-element2" href="#">
+        <a class="media-element2" href="{{ route('detail') }}">
           <img src="img/13.jpg" alt="poster" />
           <h2> Harry Potter 1</h2>
         </a>
@@ -193,11 +199,6 @@
         </symbol>
       </svg>
     </div>
-
-    <form action="/logout" method="POST">
-        @csrf
-        <button type="submit" class="btn btn-danger">logout</button>
-    </form>
 </body>
 
 </html>
